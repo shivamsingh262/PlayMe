@@ -39,7 +39,9 @@ name TEXT NOT NULL)"""
 path = [r"M:\bolly",r"M:\new",r"M:\movies",r"E:\movies",r"D:\movies",r"M:\Animated"]
 cmd = "INSERT INTO movies(url,name) VALUES (?,?)"
 
-#create_table(val2)
+create_table(val)
+create_table(val1)
+create_table(val2)
 
 for value in path:
     find_movies(cmd,value)
